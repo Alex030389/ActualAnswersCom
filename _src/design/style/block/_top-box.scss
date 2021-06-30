@@ -1,0 +1,21 @@
+.top-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-box__col {
+  width: $w-c * 533px;
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
+
+  &:first-child {
+    margin-right: 100% / 1180px * 114px;
+
+    @media (max-width: $xl) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+}

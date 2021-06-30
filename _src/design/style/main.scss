@@ -1,0 +1,71 @@
+@import "base/font";
+@import "base/var";
+@import "base/global";
+@import "base/util";
+
+// ///////////////////////////////////////// block
+@import "block/container";
+@import "block/section";
+@import "block/main-box";
+
+// title
+@import "block/title/title";
+@import "block/title/title-2";
+
+// button
+@import "block/button/btn-reset";
+@import "block/button/btn";
+
+// link
+@import "block/link/link-stretched";
+@import "block/link/link";
+@import "block/link/link-dark";
+
+// list
+@import "block/list/list-reset";
+@import "block/list/list";
+
+// header
+@import "block/header/header";
+@import "block/logo";
+@import "block/user-nav";
+@import "block/nav";
+@import "block/nav-link";
+@import "block/subnav";
+
+// @import "block/breadcrumbs";
+
+// form
+@import "block/form/search-form";
+@import "block/form/form";
+@import "block/form/form-group";
+@import "block/form/form-label";
+@import "block/form/form-control";
+
+// @import "block/table/table";
+
+@import "block/text-content";
+
+// slider
+@import "block/slider/slider-btn";
+@import "block/slider/vendors-slider";
+@import "block/slider/swiper-pagination";
+
+@import "block/agitation";
+@import "block/download";
+@import "block/top-box";
+@import "block/exam-box";
+@import "block/allvendors";
+@import "block/vendor";
+@import "block/exam";
+@import "block/faq";
+
+@import "block/side-box";
+@import "block/footer/footer";
+@import "block/up";
+
+// ///////////////////////////////////////// modal block
+@import "block/modal/modal";
+
+// ///////////////////////////////////////// display
+@import "base/display";

@@ -1,0 +1,134 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/agitation.html')
+
+  <div class="container">
+    @@include('block/download.html')
+
+    <!-- ////////////////////////////////////////////////////////// main__row -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <section class="section section--mb--md">
+          <h2 class="title">Join once. Pass exams and save money forever</h2>
+          <div class="text-content">
+            <p>Finally, a one-stop solution to all your IT certifications. Join, and you'll get <b>unlimited access</b> to over 1,000 exams... plus all future exams and all updates. You'll get the <b>actual exam questions</b>, plus all the <b>correct answers</b>. There's never been simpler, cheaper way to pass ALL your IT exams.
+            In just six years, we've grown to over 100,000 happy customers. We'll be here when you need us!</p>
+            <p><a href="#">Join us now</a> and pass ALL your IT exams for a one time free of just $129. No additional charges, ever.<br>
+              For more info, check out out <a href="#">FAQs</a>.</p>
+          </div>
+        </section>
+
+        <!-- ////////////////////////////////////////////////////////// vendors-slider -->
+        <section class="vendors-slider section section--mb--md">
+          <h2 class="visually-hidden">Vendors</h2>
+          <div class="vendors-slider__wrap-list swiper-container">
+            <ul class="vendors-slider__list swiper-wrapper">
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/citrix.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/oracle.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/vmware.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/microsoft.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/comptia.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/citrix.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/oracle.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/vmware.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/microsoft.png" alt="vendors">
+                </a>
+              </li>
+              <li class="vendors-slider__item swiper-slide">
+                <a class="venodrs-slider__link" href="#">
+                  <img class="vendors-slider__img" src="/design/images/vendors/comptia.png" alt="vendors">
+                </a>
+              </li>
+            </ul>
+
+          </div><!--/vendors-slider__wrap-list-->
+
+          <div class="vendors-slider__pagination swiper-pagination"></div>
+          <div class="vendors-slider__btn-prev slider-btn-prev">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/images/symbol/sprite.svg#slider-arrow"></use>
+            </svg>
+          </div>
+          <div class="vendors-slider__btn-next slider-btn-next">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/images/symbol/sprite.svg#slider-arrow"></use>
+            </svg>
+          </div>
+        </section>
+
+        <!-- ////////////////////////////////////////////////////////// top -->
+        <section class="top-box">
+          <div class="top-box__col exam-box">
+            <h3 class="exam-box__title exam-box__title--p--sm">Popular Certifications</h3>
+            <ul class="exam-box__list exam-box__list--p--sm">
+              @@for (var i = 0; i < 18; i++) {
+                <li class="exam-box__item exam-box__item--p--sm">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">10g DBA</a>
+                </li>
+              }
+            </ul>
+          </div>
+
+          <div class="top-box__col exam-box">
+            <h3 class="exam-box__title exam-box__title--p--sm">Recently Updated Exams</h3>
+            <ul class="exam-box__list exam-box__list--p--sm">
+              @@for (var i = 0; i < 27; i++) {
+                <li class="exam-box__item exam-box__item--p--sm exam-box__item--col--3">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">M2180-716</a>
+                </li>
+              }
+            </ul>
+          </div>
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

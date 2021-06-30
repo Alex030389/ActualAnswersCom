@@ -1,0 +1,53 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/agitation.html')
+
+  <div class="container">
+    @@include('block/download.html')
+
+    <!-- ////////////////////////////////////////////////////////// main__row -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// allvendors -->
+        <section class="allvendors section section--mb--md">
+          <h1 class="title">Included Vendors and Certifications</h1>
+          <ul class="allvendors__list">
+            @@for (var i = 0; i < 10; i++) {
+              <li class="allvendors__item">
+                <div class="allvendors__wrap-link">
+                  <a class="allvendors__link link link-stretched" href="#">AACD</a>
+                </div>
+                <div class="allvendors__info">1 Exam</div>
+              </li>
+              <li class="allvendors__item">
+                <div class="allvendors__wrap-link">
+                  <a class="allvendors__link link link-stretched" href="#">IEEE Computer Society</a>
+                </div>
+                <div class="allvendors__info">1 Exam</div>
+              </li>
+              <li class="allvendors__item">
+                <div class="allvendors__wrap-link">
+                  <a class="allvendors__link link link-stretched" href="#">Informatica</a>
+                </div>
+                <div class="allvendors__info">10 Exams</div>
+              </li>
+            }
+          </ul>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

@@ -1,0 +1,19 @@
+.section {
+  &--mb {
+    &--lg {
+      margin-bottom: 55px;
+
+      @media (max-width: $md) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &--md {
+      margin-bottom: 48px;
+
+      @media (max-width: $md) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

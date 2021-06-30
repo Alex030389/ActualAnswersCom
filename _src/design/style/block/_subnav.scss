@@ -1,0 +1,22 @@
+.subnav {
+}
+
+.subnav__list {
+  @extend .list-reset;
+  // width: 440px;
+
+  padding: 24px 40px 18px;
+
+  column-count: 3;
+  column-gap: 70px;
+
+  background-color: $c-violet;
+  border-radius: 10px;
+}
+
+.subnav__item {
+  margin-bottom: 6px;
+}
+
+.subnav__link {
+}

@@ -1,0 +1,36 @@
+.link-dark {
+  color: $c-main;
+
+  background-image: linear-gradient(to right, rgba($c-violet, .0));
+  background-repeat: repeat-x;
+  background-position: 0 1.04em;
+
+  transition: .2s;
+
+  &--underline {
+    background-image: linear-gradient(to right, rgba($c-main, .5));
+  }
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, rgba($c-main, .5));
+  }
+
+  &--hover-violet {
+    &:hover {
+      color: $c-violet;
+      text-decoration: none;
+
+      background-image: linear-gradient(to right, rgba($c-violet, .3));
+    }
+  }
+
+  &--active {
+    color: $c-violet;
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, rgba($c-violet, .3));
+  }
+}

@@ -1,0 +1,17 @@
+.link {
+  color: $c-violet;
+
+  background-image: linear-gradient(to right, rgba($c-violet, .3));
+  background-repeat: repeat-x;
+  background-position: 0 1.04em;
+  background-size: 1px 1px;
+
+  transition: .5s;
+
+  &:hover {
+    color: $c-violet;
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, rgba($c-violet, 1));
+  }
+}

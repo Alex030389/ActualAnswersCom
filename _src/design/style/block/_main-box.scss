@@ -1,0 +1,38 @@
+.main-box {
+  display: flex;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.main-box__content {
+  width: $w-cs * 1180px;
+  margin-right: 20px;
+
+  @media (max-width: $xl) {
+    width: $w-cs * 1130px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.main-box__sidebar {
+  width: $w-cs * 380px;
+
+  & > *:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $xl) {
+    width: $w-cs * 430px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+.text-content {
+  p {
+    margin-bottom: 30px;
+  }
+
+  a {
+    @extend .link;
+  }
+
+  .listTit {
+    margin-bottom: 26px;
+
+    font-weight: 700;
+
+    @media (max-width: $md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .listTit + p {
+    position: relative;
+
+    margin-bottom: 36px;
+    padding-left: 24px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 10px;
+
+      width: 4px;
+      height: 4px;
+
+      background-color: $c-main;
+      border-radius: 50%;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & *:last-child {
+    margin-bottom: 0 !important;
+  }
+}

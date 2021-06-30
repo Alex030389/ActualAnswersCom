@@ -1,0 +1,67 @@
+.user-nav {
+}
+
+.user-nav__list {
+  @extend .list-reset;
+
+  display: flex;
+}
+
+.user-nav__item {
+  position: relative;
+
+  line-height: 1.2;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+    padding-right: 20px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 1px;
+      height: 17px;
+
+      background-color: #ccc;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.user-nav__link {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 15px;
+  color: $c-main;
+  white-space: nowrap;
+
+  transition: .2s;
+
+  &:hover {
+    color: $c-violet;
+    text-decoration: none;
+  }
+
+  &--cart {
+    padding-left: 34px;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+
+  transition: .2s;
+}
+.user-nav__link:hover .user-nav__icon {
+  fill: $c-violet;
+}

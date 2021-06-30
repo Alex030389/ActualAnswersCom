@@ -1,0 +1,150 @@
+.faq {
+}
+
+.faq__title {
+  margin: 0;
+  padding: 36px 58px 43px;
+
+  border-top: 1px solid $c-gray-dark;
+  border-right: 1px solid $c-gray-dark;
+  border-left: 1px solid $c-gray-dark;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  @media (max-width: $md) {
+    margin-bottom: 26px;
+    padding: 0;
+
+    border: none;;
+  }
+}
+
+.faq__list {
+  @extend .list-reset;
+
+  padding: 0 34px 40px;
+
+  border-right: 1px solid $c-gray-dark;
+  border-bottom: 1px solid $c-gray-dark;
+  border-left: 1px solid $c-gray-dark;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  @media (max-width: $md) {
+    padding: 0 0 12px 0;
+
+    border-top: 1px solid $c-gray-dark;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.faq__item {
+  border-bottom: 1px solid $c-gray-dark;
+
+  &:first-child {
+    border-top: 1px solid $c-gray-dark;
+
+    @media (max-width: $md) {
+      border-top: none;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $md) {
+      border-bottom: none;
+    }
+  }
+}
+
+.faq__q {
+  @extend .btn-reset;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 94px;
+  padding: 31px 65px 31px 24px;
+
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+
+  @media (max-width: $md) {
+    padding: 12px 45px 12px 13px;
+  }
+}
+
+.faq__arrow {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  transform: translateY(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/icon/dropdown.svg) center center no-repeat;
+
+    transition: .3s;
+  }
+
+  @media (max-width: $md) {
+    right: 12px;
+  }
+}
+
+
+.faq__a {
+  display: none;
+  padding: 24px 24px 36px;
+
+  opacity: 0;
+
+  transition: .3s;
+
+  &--active {
+    display: block;
+
+    animation: .2s linear .1s forwards fadeIn;
+  }
+
+  @media (max-width: $md) {
+    padding: 12px 13px 26px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// //////////////////////// faq__q--active
+.faq__q.faq__q--active {
+  + .faq__a {
+    display: block;
+  }
+
+  .faq__arrow::after {
+    transform: rotate(180deg);
+  }
+
+  .link-dark {
+    @extend .link-dark--active;
+  }
+}

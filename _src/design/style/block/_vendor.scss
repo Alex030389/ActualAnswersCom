@@ -1,0 +1,24 @@
+.vendor {
+}
+
+.vendor__title {
+}
+
+.vendor__desc {
+  margin-bottom: 48px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
+}
+
+
+.vendor__exam-box {
+  &:not(:last-child) {
+    margin-bottom: 48px;
+
+    @media (max-width: $md) {
+      margin-bottom: 40px;
+    }
+  }
+}
