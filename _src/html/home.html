@@ -7,7 +7,7 @@
   <div class="container">
     @@include('block/download.html')
 
-    <!-- ////////////////////////////////////////////////////////// main__row -->
+    <!-- ////////////////////////////////////////////////////////// main-box -->
     <div class="main-box">
       <div class="main-box__content">
         <section class="section section--mb--md">
@@ -21,7 +21,7 @@
         </section>
 
         <!-- ////////////////////////////////////////////////////////// vendors-slider -->
-        <section class="vendors-slider section section--mb--md">
+        <section class="vendors-slider section section--mb--sm">
           <h2 class="visually-hidden">Vendors</h2>
           <div class="vendors-slider__wrap-list swiper-container">
             <ul class="vendors-slider__list swiper-wrapper">
@@ -77,15 +77,15 @@
               </li>
             </ul>
 
+            <div class="vendors-slider__pagination swiper-pagination"></div>
           </div><!--/vendors-slider__wrap-list-->
 
-          <div class="vendors-slider__pagination swiper-pagination"></div>
-          <div class="vendors-slider__btn-prev slider-btn-prev">
+          <div class="vendors-slider__btn swiper-button-prev">
             <svg aria-hidden="true">
               <use xlink:href="/design/images/symbol/sprite.svg#slider-arrow"></use>
             </svg>
           </div>
-          <div class="vendors-slider__btn-next slider-btn-next">
+          <div class="vendors-slider__btn swiper-button-next">
             <svg aria-hidden="true">
               <use xlink:href="/design/images/symbol/sprite.svg#slider-arrow"></use>
             </svg>
@@ -94,7 +94,7 @@
 
         <!-- ////////////////////////////////////////////////////////// top -->
         <section class="top-box">
-          <div class="top-box__col exam-box">
+          <div class="top-box__col exam-box gray-box">
             <h3 class="exam-box__title exam-box__title--p--sm">Popular Certifications</h3>
             <ul class="exam-box__list exam-box__list--p--sm">
               @@for (var i = 0; i < 18; i++) {
@@ -105,7 +105,7 @@
             </ul>
           </div>
 
-          <div class="top-box__col exam-box">
+          <div class="top-box__col exam-box gray-box">
             <h3 class="exam-box__title exam-box__title--p--sm">Recently Updated Exams</h3>
             <ul class="exam-box__list exam-box__list--p--sm">
               @@for (var i = 0; i < 27; i++) {

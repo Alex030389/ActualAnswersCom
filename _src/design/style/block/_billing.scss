@@ -1,0 +1,85 @@
+.billing {
+  padding: 64px 44px 44px;
+
+  @media (max-width: $sl) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: $md) {
+    padding: 26px 16px 6px;
+  }
+}
+
+.billing__title {
+  margin-bottom: 40px;
+}
+
+.billing__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.billing__form-group {
+  width: 100% / 1092px * 493px;
+  margin-bottom: 20px;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 100% / 1092px * 106px;
+
+    @media (max-width: $md) {
+      margin-right: 0;
+    }
+  }
+
+  &--mb--lg {
+    margin-bottom: 70px;
+
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--cards {
+    padding-top: 24px;
+
+    @media (max-width: $md) {
+      order: 2;
+      padding-top: 10px;
+    }
+  }
+
+  &--btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media (max-width: $md) {
+      justify-content: center;
+      order: 1;
+      padding-top: 20px;
+    }
+  }
+}
+
+.billin__wrap-cards {
+  margin-bottom: 33px;
+
+  @media (max-width: $md) {
+    margin-bottom: 24px;
+  }
+}
+
+.billing__cards {
+  width: 100%;
+  max-width: 340px;
+
+  @media (max-width: $md) {
+    margin: 0 auto;
+  }
+}

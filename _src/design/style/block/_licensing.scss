@@ -1,0 +1,146 @@
+.licensing {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding-top: 66px;
+
+  @media (max-width: $md) {
+    padding-top: 48px;
+  }
+}
+
+.licensing__item {
+  width: calc(#{$c3} - 20px);
+  margin: 0 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 48px;
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: $xl) {
+    width: calc(#{$c6} - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  &--wide {
+    width: 100%;
+
+    @media (max-width: $xl) {
+      width: 100%;
+    }
+  }
+}
+
+.licensing__item-p {
+  font-size: 14px;
+}
+
+.licensing__form {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px;
+
+  @media (max-width: $md) {
+    padding: 24px 16px;
+  }
+}
+
+.licensing__form-part {
+  &:first-child {
+    margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.licensing__title {
+  margin-bottom: 28px;
+
+  font-weight: 700;
+}
+
+.licensing__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.licensing__col {
+  width: 100% / 940px * 395px;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  &--wide {
+    width: 100% / 940px * 498px;
+  }
+}
+
+.licensing__form-group {
+  margin-bottom: 18px;
+
+  &--code {
+    flex-direction: row;
+    margin-bottom: 36px;
+    padding-top: 26px;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 25px;
+      padding-top: 0;
+    }
+  }
+}
+
+.licensing__mondatory {
+  padding-top: 140px;
+
+  font-size: 13px;
+
+  span {
+    color: red;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 178px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+}
+
+.licensing__wrap-btn {
+  text-align: right;
+
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.licensing__btn {
+  max-width: 365px;
+
+  @media (max-width: $md) {
+    // height: 60px;
+  }
+
+  @media (max-width: $sm) {
+    // max-width: 100%;
+  }
+}

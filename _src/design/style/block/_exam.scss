@@ -4,8 +4,6 @@
   align-items: center;
   padding: 43px 0;
 
-  background-color: rgba($c-orange, .1);
-
   @media (max-width: $md) {
     flex-direction: column;
     padding: 36px 16px 24px;

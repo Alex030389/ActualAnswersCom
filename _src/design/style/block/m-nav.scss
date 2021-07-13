@@ -1,0 +1,108 @@
+.m-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: none;
+
+  background-color: rgba(11, 17, 41, .5);
+  opacity: 0;
+
+  @media (max-width: $lg) {
+    &--active {
+      display: block;
+
+      animation: .3s linear .1s forwards fadeIn;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.m-nav__box {
+  width: 60%;
+  min-width: 250px;
+  height: 100%;
+  padding: 30px 16px;
+  overflow-y: auto;
+
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  transform: translateX(-100%);
+
+  &--active {
+    animation: .3s linear .1s forwards slideRight;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.m-nav__logo-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.m-nav__logo {
+  width: 156px;
+}
+
+.m-nav__btn-close {
+  @extend .btn-reset;
+
+  position: absolute;
+  top: 44px;
+  right: 16px;
+
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: $c-violet;
+  }
+}
+
+.m-nav__list {
+  @extend .list-reset;
+
+  padding: 20px 0;
+}
+
+.m-nav__list--underline {
+  border-bottom: 1px solid #ccc;
+}
+
+.m-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.m-nav__link {
+  font-weight: 500;
+  color: $c-main;
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+  }
+}

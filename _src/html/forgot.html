@@ -1,0 +1,31 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <div class="container">
+    <!-- /////////////////////////////////////////////////// signup -->
+    <section class="signup signup--single">
+      <div class="signup__box-forms signup__box-forms--single">
+        <form class="signup__form signup__form--single signup__form--active" action="#">
+          <h1 class="signup__title title">Retrieve Forgotten Password</h1>
+          <p class="signup__subtitle signup__subtitle--mb--lg">Please enter the e-mail address you used to create your account, we will send your password information. Once you have logged into your account, you can easily change/update your password information in the Members Area.</p>
+          <div class="signup__form-group signup__form-group--mb--lg form-group">
+            <label class="form-label" for="email">E-mail address:</label>
+            <input class="form-control form-control--gray" type="text" id="email" name="email">
+          </div>
+          <button class="signup__btn signup__btn--mb--lg btn btn--green">Send Password</button>
+          <p class="signup__support"><b>NOTE:</b> To make sure that you can receive a reply from ActualAnswers, add the "actualanswers.com" domain to your e-mail "safe list" or add email address <a class="link link--green" href="mailto:support@actualanswers.com">support@actualanswers.com</a> to your address book. If you do not receive a response in your "inbox" within 10 minutes, check your "bulk mail" or "junk mail" folders.</p>
+        </form>
+
+
+      </div><!--/signup__inner-->
+
+
+
+    </section>
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

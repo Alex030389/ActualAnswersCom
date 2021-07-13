@@ -21,9 +21,22 @@
     outline: none;
     box-shadow: inset 0 0 0 1px $c-violet;
   };
+
+  &--gray {
+    background-color: $c-gray;
+  }
+
+  &--textarea {
+    min-height: 108px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    resize: none;
+  }
 }
 
 .selectric-form-control {
+  width: 100%;
   .selectric {
     @extend .form-control;
 
@@ -89,6 +102,21 @@
       &.selected {
         background: rgba(131, 114, 232, .2);
       }
+    }
+  }
+
+  &--separator {
+    .button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -7px;
+
+      width: 1px;
+      height: calc(100% - 20px);
+
+      background-color: #dbe1ed;
+      transform: translateY(-50%);
     }
   }
 }

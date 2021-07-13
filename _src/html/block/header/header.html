@@ -158,21 +158,10 @@
             <a class="nav-link" href="#">CONTACT</a>
           </li>
         </ul>
-
-        <nav class="header__user-nav user-nav d-none d-lg-block">
-          <ul class="user-nav__list">
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="#">Sign In</a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="#">Register</a>
-            </li>
-          </ul>
-        </nav>
       </nav>
 
       <div class="header__box-hamburger-cart">
-        <button class="header__hamburger" aria-label="button hamburger">
+        <button class="header__hamburger" aria-label="button hamburger" data-js="btn-hamburger">
           <svg class="header__icon" aria-hidden="true">
             <use xlink:href="/design/images/symbol/sprite.svg#hamburger"></use>
           </svg>
@@ -185,4 +174,55 @@
       </div>
     </div><!--/container-->
   </div><!--/header-bottom-->
+
+  <!-- ///////////////////////////////////////////// mobile menu -->
+  <nav class="m-nav" data-js="m-nav">
+    <div class="m-nav__box" data-js="m-nav-box">
+      <a class="m-nav__logo-link" href="#">
+        <img class="m-nav__logo" src="/design/images/logo/logo.svg" width="156px" height="65" alt="logo">
+      </a>
+
+      <button class="m-nav__btn-close" aria-label="close button" data-js="m-nav-btn-close">
+        <svg aria-hidden="true">
+          <use xlink:href="/design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="m-nav__list m-nav__list--underline">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">HOME</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CERTIFICATIONS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">EXAMS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">FAQs</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">SAMPLES</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">GUARANTEE</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">ABOUT</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CONTACT</a>
+        </li>
+      </ul>
+
+      <ul class="m-nav__list">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Sign In</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Register</a>
+        </li>
+      </ul>
+    </div><!--/m-nav__box-->
+  </nav>
 </header>

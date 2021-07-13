@@ -1,0 +1,27 @@
+.text-img-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-img-box__text {
+  flex-grow: 1;
+  margin-right: 40px;
+
+  @media (max-width: $md) {
+    margin-right: 0;
+  }
+}
+
+.text-img-box__img {
+  flex-shrink: 0;
+  width: 156px;
+  margin-right: 40px;
+
+  @media (max-width: $lg) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}

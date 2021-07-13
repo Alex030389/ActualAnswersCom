@@ -1,0 +1,40 @@
+.testimonials-slider {
+  position: relative;
+
+  padding: 0 50px;
+
+  @media (max-width: $sm) {
+    padding: 0;
+  }
+}
+
+.testimonials-slider__wrap-list {
+}
+
+.testimonials-slider__list {
+  @extend .list-reset;
+
+  margin-bottom: 50px;
+}
+
+.testimonials-slider__item {
+  height: auto;
+  padding: 20px 16px;
+}
+
+.testimonials-slider__title {
+  margin-bottom: 5px;
+
+  font-weight: 500;
+}
+
+.testimonials-slider__text {
+}
+
+.testimonials-slider__btn {
+  top: 38%;
+
+  @media (max-width: $sm) {
+    display: none;
+  }
+}

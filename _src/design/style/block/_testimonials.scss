@@ -1,0 +1,13 @@
+.testimonials {
+  @media (max-width: $sm) {
+    margin-bottom: -10px;
+  }
+}
+
+.testimonials__title {
+  margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}

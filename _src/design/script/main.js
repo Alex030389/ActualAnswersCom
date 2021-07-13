@@ -13,17 +13,17 @@ svg4everybody();
 // selectric
 $('[data-js="selectric"]').selectric()
 
-
 // ///////////////////////////////////// polifill
 @@include('block/__polifill.js')
-
-
 // ///////////////////////////////////// block
 @@include('block/__buttons-blur.js')
 @@include('block/__search-input.js')
+@@include('block/__hamburger.js')
 @@include('block/__slider.js')
-// @@include('block/__hamburger.js');
-@@include('block/__accordion.js');
+@@include('block/__accordion.js')
+@@include('block/__checkbox.js')
+@@include('block/__signup.js')
+@@include('block/__signum-tab.js')
 // @@include('block/__tab.js');
 // @@include('block/__copy-discount.js');
 // @@include('block/__modal.js');

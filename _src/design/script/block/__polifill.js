@@ -1,3 +1,10 @@
+// foreach
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+
+
 // for swiper.js
 Number.isNaN = Number.isNaN || function(value) {
   return typeof value === 'number' && isNaN(value);

@@ -1,0 +1,160 @@
+@@include('block/head.html')
+@@include('block/header/header-without-menu.html')
+
+<main class="main">
+  <div class="container">
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section section--mb--md">
+          <h1 class="title">Review Your Order</h1>
+          <p>The following items have been added to your shopping cart. Now, please, enter your billing information below, as it appears on your credit card statement.</p>
+          <a class="link link--green" href="#">Need help with your purchase?</a>
+        </section>
+
+        <section class="section section--mb--md steps violet-box">
+          <h2 class="visually-hidden">Steps to start exams</h2>
+          <div class="steps__item">
+            <div class="steps__circle steps__circle--current">1</div>
+            <div class="steps__text">Shopping Cart and Billing</div>
+          </div>
+          <div class="steps__item">
+            <div class="steps__circle">2</div>
+            <div class="steps__text">Register and Login</div>
+          </div>
+          <div class="steps__item">
+            <div class="steps__circle">3</div>
+            <div class="steps__text">Download</div>
+          </div>
+        </section><!--/steps-->
+
+        <section class="section section--mb--md">
+          <h2 class="visually-hidden">Product Description</h2>
+          <div class="table table--mb--md">
+            <div class="table__row table__row--head">
+              <div class="table__cell table__cell--h">Product Description</div>
+              <div class="table__cell table__cell--h d-md-none">Price</div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Unlimited Access $129 Package</div>
+              <div class="table__cell"><span class="table__cell-span d-none d-md-inline">Price</span> $129.00 </div>
+            </div>
+            <div class="table__row table__row--foot">
+              <div class="table__cell table__cell--f d-md-none"></div>
+              <div class="table__cell table__cell--f">Total : $129.00</div>
+            </div>
+          </div>
+          <a class="link link--green" href="#">Continue Shopping</a>
+        </section><!--/checkout__table-->
+
+        <section class="billing gray-box">
+          <h2 class="billing__title title">Secure Billing Information</h2>
+          <form class="billing__form" action="#">
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="name">First Name on Card :</label>
+              <input class="form-control" type="text" id="name" name="name">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="last-name">Last Name on Card : </label>
+              <input class="form-control" type="text" id="last-name" name="last-name">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="address">Address:</label>
+              <input class="form-control" type="text" id="address" name="address">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="city">City:</label>
+              <input class="form-control" type="text" id="city" name="city">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="state">State/Prov:</label>
+              <input class="form-control" type="text" id="state" name="state">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="country">Country:</label>
+              <select class="form-control" data-js="selectric" name="country" id="country">
+                <option value="1">Select country</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            </div>
+            <div class="billing__form-group billing__form-group--mb--lg form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="zip">Zip/Postal:</label>
+              <input class="form-control" type="text" id="zip" name="zip">
+            </div>
+            <div class="billing__form-group billing__form-group--mb--lg form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="email">E-mail address:</label>
+              <input class="form-control" type="text" id="email" name="email">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="card-number">Card Number:</label>
+              <input class="form-control" type="text" id="card-number" name="card-number">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="card-type">Card Type:</label>
+              <select class="form-control" data-js="selectric" name="card-type" id="card-type">
+                <option value="1">Select Card Type</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="cvv">Security Code (CVV): </label>
+              <input class="form-control" type="text" id="cvv" name="cvv">
+            </div>
+            <div class="billing__form-group form-group form-group--row">
+              <label class="form-label form-label--row form-label--fix-width" for="day">Expiration Date:</label>
+              <div class="form-box-contol">
+                <select class="form-control form-control--separator" data-js="selectric" name="day" id="day">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">05</option>
+                  <option value="5">06</option>
+                </select>
+                <select class="form-control form-control--separator" data-js="selectric" name="month" id="month">
+                  <option value="1">21</option>
+                  <option value="2">22</option>
+                  <option value="3">23</option>
+                  <option value="4">24</option>
+                  <option value="5">25</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="billing__form-group billing__form-group--cards">
+              <div class="billin__wrap-cards">
+                <img class="billing__cards" src="/design/images/ui/cards.svg" width="304" height="37" alt="img">
+              </div>
+              <div class="billing__desc">Your purchase with ActualAnswers.com is safe and fast. Your products will be available for immediate download after your payment has been received.</div>
+            </div>
+            <div class="billing__form-group billing__form-group--btn">
+              <button class="btn btn--violet">Pay Now</button>
+            </div>
+
+
+          </form>
+        </section>
+
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/money-back.html')
+        @@include('block/side-box/why-buy.html')
+        @@include('block/side-box/success.html')
+        @@include('block/side-box/need-help.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

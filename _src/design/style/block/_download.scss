@@ -12,7 +12,7 @@
   align-items: center;
   padding: 34px 20px;
 
-  background-color: rgba($c-violet, .1);
+  background-color: $c-violet-light;
   border-radius: 6px;
 
   @media (max-width: $xl) {
@@ -101,7 +101,13 @@
 }
 
 .download__btn {
+  max-width: 252px;
+  height: 50px;
   margin-left: 4.5%;
+
+  @media (max-width: $md) {
+    height: 50px;
+  }
 
   @media (max-width: $lg) {
     margin: 0 auto;

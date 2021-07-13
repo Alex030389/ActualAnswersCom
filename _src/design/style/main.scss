@@ -25,40 +25,52 @@
 @import "block/list/list-reset";
 @import "block/list/list";
 
-// header
+// form
+@import "block/form/search-form";
+@import "block/form/form";
+@import "block/form/form-group";
+@import "block/form/form-label";
+@import "block/form/form-box-contol";
+@import "block/form/form-control";
+@import "block/form/checkbox-group";
+
+// slider buttons controls
+@import "block/slider/swiper-button";
+@import "block/slider/swiper-pagination";
+
+// ather
+@import "block/text-content";
+@import "block/gray-box";
+@import "block/orange-box";
+@import "block/violet-box";
 @import "block/header/header";
 @import "block/logo";
 @import "block/user-nav";
 @import "block/nav";
 @import "block/nav-link";
 @import "block/subnav";
-
-// @import "block/breadcrumbs";
-
-// form
-@import "block/form/search-form";
-@import "block/form/form";
-@import "block/form/form-group";
-@import "block/form/form-label";
-@import "block/form/form-control";
-
-// @import "block/table/table";
-
-@import "block/text-content";
-
-// slider
-@import "block/slider/slider-btn";
-@import "block/slider/vendors-slider";
-@import "block/slider/swiper-pagination";
-
+@import "block/m-nav.scss";
 @import "block/agitation";
 @import "block/download";
 @import "block/top-box";
 @import "block/exam-box";
 @import "block/allvendors";
 @import "block/vendor";
+@import "block/slider/vendors-slider";
 @import "block/exam";
 @import "block/faq";
+@import "block/text-img-box";
+@import "block/sample";
+@import "block/signup";
+@import "block/testimonials";
+@import "block/testimonials-slider";
+@import "block/licensing";
+@import "block/form/code";
+// @import "block/checkout";
+@import "block/steps";
+// @import "block/breadcrumbs";
+@import "block/table/table";
+@import "block/billing";
 
 @import "block/side-box";
 @import "block/footer/footer";

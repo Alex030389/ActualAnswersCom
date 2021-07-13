@@ -8,14 +8,28 @@
   line-height: 1.5;
 
   background: url(../images/icon/item.svg) left 1px no-repeat;
+  background-size: 24px;
 
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (max-width: $md) {
+      margin-bottom: 8px;
+    }
   }
 
-  @media (max-width: $md) {
+  &--type-2 {
+    line-height: 1.87;
+
+    background-image: url(../images/icon/item-orange.svg);
+    background-position: left 3px;
+
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: 13px;
+
+      @media (max-width: $md) {
+        margin-bottom: 8px;
+      }
     }
   }
 }

@@ -14,4 +14,16 @@
 
     background-image: linear-gradient(to right, rgba($c-violet, 1));
   }
+
+  &--green {
+    color: $c-green;
+
+    background-image: linear-gradient(to right, rgba($c-green, .3));
+
+    &:hover {
+      color: #276e78;
+
+      background-image: linear-gradient(to right, rgba(#276e78, .6));
+    }
+  }
 }

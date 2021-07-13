@@ -5,6 +5,10 @@
   background-color: rgba($c-green, .06);
   border-radius: 10px;
 
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $md) {
     padding: 0 19px 22px;
   }
@@ -29,6 +33,22 @@
     padding-right: 22px;
     padding-left: 22px;
   }
+
+  &--low {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+.side-box__list {
+  margin-bottom: 14px;
+}
+
+.side-box__p {
+  margin-bottom: 22px;
+
+  font-size: 14px;
+  line-height: 1.72;
 }
 
 .side-box__reviews {
@@ -48,4 +68,21 @@
 
 .side-box__companies-img:not(:last-child) {
   margin-bottom: 22px;
+}
+
+.side-box__wrap-money-back {
+  max-width: 343px;
+  margin: 0 auto 29px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 20px;
+  }
+}
+
+.side-box__money-back {
+  max-height: 89px;
+  padding-bottom: 26%;
+
+  background: url(../images/ui/flag-2.svg) center center no-repeat;
+  background-size: 100%;
 }

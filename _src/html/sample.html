@@ -1,0 +1,52 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/agitation.html')
+
+  <div class="container">
+    @@include('block/download.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <section class="section section--mb--md">
+          <h1 class="title">Sample Products At ActualAnswers.com</h1>
+          <!-- ////////////////////////////////////////////////////////// text-img-box -->
+          <div class="text-img-box">
+            <div class="text-img-box__text text-content">
+              <p>To evaluate the quality and style of the ActualAnswers files, we have provided Sample zipped PDF files for you to download. You can just click on any link below to start downloading.</p>
+              <p>NOTE: every sample file below contains 30 questions and answers only.</p>
+            </div>
+
+            <img class="text-img-box__img" width="156" height="156" src="/design/images/ui/sample.png" alt="img">
+          </div><!--/text-img-box-->
+        </section>
+
+        <!-- ////////////////////////////////////////////////////////// sample -->
+        <section class="sample orange-box">
+          <h2 class="sample__title title title--orange">Download Sample Products</h2>
+          <p class="sample__pdf">Download PDF</p>
+          <ul class="sample__list">
+            @@for (var i = 0; i < 10; i++) {
+              <li class="sample__item">
+                <a class="sample__link link-dark link-dark--underline link-dark--hover-violet" href="#">Juniper JN0-101</a> : Juniper Networks Certified Internet Associate, Junos (JNCIA-Junos)
+              </li>
+            }
+          </ul>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

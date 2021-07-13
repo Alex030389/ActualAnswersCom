@@ -8,8 +8,10 @@ $lh-main: 1.875;
 // //////////////////////////////////////// colors
 $c-main: #0b1129;
 $c-violet: #8372e8;
+$c-violet-light: rgba($c-violet, .1);
 $c-green: #39929e;
 $c-orange: #eda85a;
+$c-orange-light: rgba($c-orange, .1);
 $c-gray: #f7f7f9;
 $c-gray-dark: #e6e8eb;
 
@@ -43,3 +45,4 @@ $c4: 33.333333%;
 $c3: 25%;
 $c2: 16.666667%;
 $c1: 8.333333%;
+// width: calc(#{$c4} - 20px); - example

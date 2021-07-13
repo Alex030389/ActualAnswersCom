@@ -9,6 +9,10 @@ body {
   font-family: $ff-main;
   color: $c-main;
   // overflow-x: hidden;
+
+  &.fixed {
+    overflow-y: hidden;
+  }
 }
 
 .main {

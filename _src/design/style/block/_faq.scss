@@ -110,14 +110,13 @@
   display: none;
   padding: 24px 24px 36px;
 
+  transform: translateY(-10px);
   opacity: 0;
-
-  transition: .3s;
 
   &--active {
     display: block;
 
-    animation: .2s linear .1s forwards fadeIn;
+    animation: .1s linear .1s forwards openAnswer;
   }
 
   @media (max-width: $md) {
@@ -125,11 +124,13 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes openAnswer {
   from {
+    transform: translateY(-10px);
     opacity: 0;
   }
   to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
