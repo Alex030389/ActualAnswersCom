@@ -2,6 +2,7 @@
 @import "base/var";
 @import "base/global";
 @import "base/util";
+@import "base/animation";
 
 // ///////////////////////////////////////// block
 @import "block/container";
@@ -71,6 +72,7 @@
 // @import "block/breadcrumbs";
 @import "block/table/table";
 @import "block/billing";
+@import "block/step-pay";
 
 @import "block/side-box";
 @import "block/footer/footer";

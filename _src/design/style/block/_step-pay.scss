@@ -1,0 +1,115 @@
+.step-pay {
+  padding: 64px 44px;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $md) {
+    padding: 28px 12px;
+  }
+}
+
+.step-pay__title {
+  margin-bottom: 20px;
+}
+
+.step-pay__subtitle {
+  margin-bottom: 30px;
+  padding-top: 9px;
+
+  @media (max-width: $md) {
+    margin-bottom: 24px;
+    padding-top: 0;
+  }
+}
+
+.step-pay__inner-box {
+  margin-bottom: 48px;
+  padding: 22px;
+
+  background-color: #fff;
+  border-radius: 10px;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+    padding: 20px 12px;
+  }
+}
+
+.step-pay__option {
+  margin-bottom: 20px;
+}
+
+.step-pay__form {
+  display: flex;
+  margin-bottom: 24px;
+  padding-top: 9px;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.step-pay__form-group {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 414px;
+  margin-right: 30px;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.step-pay__form-label {
+  flex-shrink: 0;
+  align-self: center;
+  margin: 0 20px 0 0;
+
+  @media (max-width: $md) {
+    align-self: flex-start;
+    margin-bottom: 12px;
+  }
+}
+
+.step-pay__form-control {
+  height: 50px;
+}
+
+.step-pay__btn {
+  max-width: 189px;
+  height: 50px;
+
+  @media (max-width: $md) {
+    max-width: 338px;
+  }
+}
+
+.step-pay__wrap-img {
+  width: 340px;
+  margin-bottom: 25px;
+  padding-top: 18px;
+
+  @media (max-width: $md) {
+    margin: 0 auto 25px;
+  }
+}
+
+.step-pay__img {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+
+  &--sm {
+    max-width: 167px;
+  }
+}

@@ -1,0 +1,80 @@
+@@include('block/head.html')
+@@include('block/header/header-without-menu.html')
+
+<main class="main">
+  <div class="container">
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section section--mb--md">
+          <h1 class="title">Alternative Payment Options</h1>
+          <div class="table table--mb--md">
+            <div class="table__row table__row--head">
+              <div class="table__cell table__cell--h">Your Product List</div>
+              <div class="table__cell table__cell--h d-md-none">Price</div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Unlimited Access $129 Package</div>
+              <div class="table__cell"><span class="table__cell-span d-none d-md-inline">Price</span> $129.00 </div>
+            </div>
+            <div class="table__row table__row--foot">
+              <div class="table__cell table__cell--f d-md-none"></div>
+              <div class="table__cell table__cell--f">Total : $129.00</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-pay section section--mb--md gray-box">
+          <h2 class="step-pay__title title">Step 1</h2>
+          <div class="text-content">
+            <p>Before trying any of the below it is important to inform your bank that you are going to make online purchase from <b>"www.actualanswers.com"</b> and the "$129.00" and ask the bank to authorize the transaction next time you are going to try. This is a very common problem which can be solved with one phone call to bank and mostly resolves the issue.</p>
+            <p>Please verify your information before submitting, for typigraphical errors.</p>
+          </div>
+        </section>
+
+        <section class="step-pay section section--mb--md gray-box">
+          <h2 class="step-pay__title title">Step 2</h2>
+          <p class="step-pay__subtitle"><b>Credit and Debit Card Options</b></p>
+          <div class="step-pay__inner-box">
+            <p class="step-pay__option"><b>Option 1</b></p>
+            <p>Try your Card through a Secondary Bank. You will be redirected to Secondary Bank page for making the payment and then returned here to receive/download your products. This option is only valid for Visa, Mastercard and American Express cards. </p>
+            <form class="step-pay__form">
+              <div class="step-pay__form-group form-group">
+                <label class="step-pay__form-label form-label" for="email">Your Email:</label>
+                <input class="step-pay__form-control form-control form-control--border-black" type="text" id="email" name="email">
+              </div>
+              <button class="step-pay__btn btn btn--violet">Pay Now</button>
+            </form>
+
+            <div class="step-pay__wrap-img">
+              <img class="step-pay__img step-pay__img--sm" src="/design/images/ui/cards-3.svg" width="166" height="30" alt="img">
+            </div>
+            <p>Note: The charges on your Credit/Debit Card Statement will appear as paid to 'Learning Tools' - our partner in accepting payments.</p>
+          </div><!--/step-pay__inner-box-->
+
+          <div class="step-pay__inner-box">
+            <p class="step-pay__option"><b>Option 2</b></p>
+            <p><b>Go to Payment Page and try your CC details again</b>. Since you have informed the bank it should work fine. You can pay using the following credit or debit cards: Visa, Mastercard, Diners Club, American Express, Maestro and JCB cards.</p>
+            <div class="step-pay__wrap-img">
+              <img class="step-pay__img" src="/design/images/ui/cards.svg" width="304" height="37" alt="img">
+            </div>
+          </div><!--/step-pay__inner-box-->
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/money-back.html')
+        @@include('block/side-box/why-buy.html')
+        @@include('block/side-box/success.html')
+        @@include('block/side-box/need-help.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

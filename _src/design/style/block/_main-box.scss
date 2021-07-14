@@ -20,6 +20,11 @@
   width: $w-cs * 1180px;
   margin-right: 20px;
 
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $xl) {
     width: $w-cs * 1130px;
   }
