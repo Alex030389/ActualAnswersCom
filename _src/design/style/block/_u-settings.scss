@@ -1,0 +1,62 @@
+.u-settings {
+  padding: 32px 16px;
+
+  @media (max-width: $md) {
+    padding-bottom: 24px;
+  }
+}
+
+.u-settings__form {
+  width: 100%;
+  max-width: 465px;
+  margin: 0 auto;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.u-settings__part {
+  margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    margin-bottom: 34px;
+  }
+
+  &--narrow {
+    max-width: 367px;
+
+    @media (max-width: $sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+.u-settings__title {
+  margin-bottom: 28px;
+
+  font-weight: 700;
+}
+
+.u-settings__checkbox-group {
+  margin-bottom: 3px;
+}
+
+.u-settings__form-group {
+  margin-bottom: 16px;
+
+  &--readonly {
+    margin-top: -5px;
+    margin-bottom: 18px;
+  }
+
+  &--mb {
+    &--lg {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.u-settings__btn {
+  max-width: 100%;
+}

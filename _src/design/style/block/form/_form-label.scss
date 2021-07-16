@@ -6,6 +6,7 @@
 
   font-size: 13px;
   line-height: 1.3;
+  white-space: nowrap;
 
 
   &--required {
@@ -37,6 +38,17 @@
     @media (max-width: $xl) {
       align-self: flex-start;
       margin-bottom: 12px;
+    }
+  }
+
+  &--readonly {
+    align-self: center;
+    margin-right: 12px;
+    margin-bottom: 0;
+
+    @media (max-width: $sm) {
+      align-self: start;
+      margin-right: 0;
     }
   }
 

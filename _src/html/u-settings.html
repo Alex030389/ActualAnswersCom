@@ -1,0 +1,71 @@
+@@include('block/head.html', {"title": "orders"})
+@@include('block/header/header-with-u-menu.html')
+
+<main class="main">
+
+  <div class="container">
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section">
+          <h1 class="title">Update Your Settings</h1>
+
+          <div class="u-settings gray-box">
+            <form class="u-settings__form" action="#">
+              <div class="u-settings__part">
+                <p class="u-settings__title">General Notifications:</p>
+                <div class="u-settings__checkbox-group checkbox-group">
+                  <input class="checkbox-group__input visually-hidden" type="checkbox" checked id="checkbox1">
+                  <label class="checkbox-group__label" for="checkbox1" data-js="checkbox-label">Include me in the ActualAnswers malling list.</label>
+                </div>
+                <div class="u-settings__checkbox-group checkbox-group">
+                  <input class="checkbox-group__input visually-hidden" type="checkbox" id="checkbox2">
+                  <label class="checkbox-group__label" for="checkbox2" data-js="checkbox-label">I want to be notified when my products have been updated.</label>
+                </div>
+                <div class="u-settings__checkbox-group checkbox-group">
+                  <input class="checkbox-group__input visually-hidden" type="checkbox" id="checkbox3">
+                  <label class="checkbox-group__label" for="checkbox3" data-js="checkbox-label">I want to receive special offers from ActualAnswers partners.</label>
+                </div>
+              </div>
+
+              <div class="u-settings__part u-settings__part--narrow">
+                <p class="u-settings__title">Email Address and Password:</p>
+                <div class="u-settings__form-group u-settings__form-group--readonly form-group form-group--readonly">
+                  <label class="form-label form-label--readonly" for="c-email">Current Email Address: </label>
+                  <input class="form-control form-control--readonly" readonly
+                  value="brownhouse1@outlook.com" type="text" id="c-email" name="c-email">
+                </div>
+                <div class="u-settings__form-group form-group">
+                  <label class="form-label" for="email">New Email Address:</label>
+                  <input class="form-control" type="text" id="email" name="email">
+                </div>
+                <div class="u-settings__form-group form-group">
+                  <label class="form-label" for="password">New Password:</label>
+                  <input class="form-control" type="password" id="password" name="password">
+                  <div class="form-explain">* 6 characters minimum</div>
+                </div>
+                <div class="u-settings__form-group u-settings__form-group--mb--lg form-group">
+                  <label class="form-label" for="password2">Confirm Password:</label>
+                  <input class="form-control" type="password" id="password2" name="password2">
+                </div>
+                <button class="u-settings__btn btn btn--violet">Save</button>
+              </div>
+            </form>
+          </div><!--/u-settings-->
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

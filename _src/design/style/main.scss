@@ -34,6 +34,8 @@
 @import "block/form/form-box-contol";
 @import "block/form/form-control";
 @import "block/form/checkbox-group";
+@import "block/form/code";
+@import "block/form/form-explain";
 
 // slider buttons controls
 @import "block/slider/swiper-button";
@@ -50,7 +52,8 @@
 @import "block/nav";
 @import "block/nav-link";
 @import "block/subnav";
-@import "block/m-nav.scss";
+@import "block/m-nav";
+@import "block/u-nav";
 @import "block/agitation";
 @import "block/download";
 @import "block/top-box";
@@ -66,13 +69,11 @@
 @import "block/testimonials";
 @import "block/testimonials-slider";
 @import "block/licensing";
-@import "block/form/code";
-// @import "block/checkout";
 @import "block/steps";
-// @import "block/breadcrumbs";
 @import "block/table/table";
 @import "block/billing";
 @import "block/step-pay";
+@import "block/u-settings";
 
 @import "block/side-box";
 @import "block/footer/footer";

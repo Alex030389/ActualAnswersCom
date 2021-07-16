@@ -28,6 +28,60 @@
 
     &::after {
       background-color: rgba(255, 255, 255, .5);
+
+      @media (max-width: $lg) {
+        background-color: rgba(255, 255, 255, .0);
+      }
+    }
+  }
+
+  &.nav-link--current {
+    font-weight: 700;
+
+    @media (max-width: $lg) {
+      font-weight: 500;
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, .5);
+
+      @media (max-width: $lg) {
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+
+  &--violet {
+    color: $c-violet;
+
+
+    &::after {
+      background-color: rgba($c-violet, .0);
+    }
+
+    &:hover {
+      color: $c-violet;
+
+      &::after {
+        background-color: rgba($c-violet, .5);
+      }
+    }
+
+    &.nav-link--current {
+      &::after {
+        background-color: rgba($c-violet, .5);
+
+        @media (max-width: $lg) {
+          background-color: rgba($c-violet, 0);
+        }
+      }
+    }
+
+    &.nav-link--active {
+      font-weight: 700;
+      &::after {
+        background-color: rgba($c-violet, .5) !important;
+      }
     }
   }
 }

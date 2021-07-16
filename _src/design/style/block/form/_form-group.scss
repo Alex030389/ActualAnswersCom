@@ -9,4 +9,12 @@
       flex-direction: column;
     }
   }
+
+  &--readonly {
+    flex-direction: row;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
 }

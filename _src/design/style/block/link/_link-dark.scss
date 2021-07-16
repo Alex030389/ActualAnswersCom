@@ -21,9 +21,16 @@
   &--hover-violet {
     &:hover {
       color: $c-violet;
-      text-decoration: none;
 
       background-image: linear-gradient(to right, rgba($c-violet, .3));
+    }
+  }
+
+  &--hover-orange {
+    &:hover {
+      color: $c-orange;
+
+      background-image: linear-gradient(to right, rgba($c-orange, .3));
     }
   }
 

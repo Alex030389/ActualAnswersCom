@@ -54,12 +54,7 @@
 }
 
 .exam__btn {
-  @media (max-width: $xl) {
-    width: 100%;
-  }
-
   @media (max-width: $md) {
-    width: 338px;
     margin: 0 auto;
   }
 }

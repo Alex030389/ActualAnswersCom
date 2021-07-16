@@ -6,6 +6,8 @@
   margin-bottom: 0;
   padding: 22px 44px;
 
+  user-select: none;
+
   @media (max-width: $md) {
     padding: 22px 20px;
   }
@@ -141,9 +143,6 @@
 }
 
 .exam-box__wrap-link {
-  @media (max-width: $md) {
-    text-align: center;
-  }
 }
 
 .exam-box__link {

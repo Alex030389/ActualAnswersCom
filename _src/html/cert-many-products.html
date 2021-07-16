@@ -1,5 +1,5 @@
-@@include('block/head.html')
-@@include('block/header/header.html')
+@@include('block/head.html', {"title": "cert-many-products"})
+@@include('block/header/header.html', {"unav": false})
 
 <main class="main">
   @@include('block/agitation.html')
@@ -20,7 +20,7 @@
             <ul class="exam-box__list exam-box__list--orange">
               @@for (var i = 0; i < 12; i++) {
                 <li class="exam-box__item exam-box__item--orange">
-                  <a class="exam-box__link link-dark" href="#">CompTIA Cloud Essentials</a>
+                  <a class="exam-box__link link-dark link-dark--hover-orange" href="#">CompTIA Cloud Essentials</a>
                 </li>
               }
             </ul>

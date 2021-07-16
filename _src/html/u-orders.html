@@ -1,0 +1,40 @@
+@@include('block/head.html', {"title": "orders"})
+@@include('block/header/header-with-u-menu.html')
+
+<main class="main">
+
+  <div class="container">
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section">
+          <h1 class="title">Orders and Invoices</h1>
+
+          <div class="table-2">
+            <div class="table-2__row table-2__row--head">
+              <div class="table-2__cell table-2__cell--h">Your Product List</div>
+              <div class="table-2__cell table-2__cell--h d-md-none">Price</div>
+            </div>
+            <div class="table-2__row">
+              <div class="table-2__cell">Unlimited Access $129 Package</div>
+              <div class="table-2__cell"><span class="table-2__cell-span d-none d-md-inline">Price</span> $129.00 </div>
+            </div>
+          </div><!--/table-2-->
+
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

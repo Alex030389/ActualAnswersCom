@@ -2,14 +2,8 @@
   padding-top: 56px;
 
   @media (max-width: $md) {
-    padding-top: 24px;
+    padding-top: 23px;
   }
-
-  // &--single {
-  //   @media (max-width: $md) {
-  //     padding-top: 56px;
-  //   }
-  // }
 }
 
 .signup__tab-btns {
@@ -184,6 +178,7 @@
 }
 
 .signup__subtitle {
+  width: 100%;
   margin-bottom: 18px;
 
   text-align: center;
@@ -243,5 +238,6 @@
 }
 
 .signup__support {
+  width: 100%;
   margin-bottom: 0;
 }
