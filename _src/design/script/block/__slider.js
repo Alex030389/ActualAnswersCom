@@ -10,6 +10,10 @@ const vendorsSlider = new Swiper('.vendors-slider__wrap-list', {
     el: ".swiper-pagination",
     clickable: true,
   },
+  lazy: {
+    loadPrevNext: true,
+    loadPrevNextAmount: 5,
+  },
   breakpoints: {
     1200: {
       slidesPerView: 4,
@@ -19,7 +23,6 @@ const vendorsSlider = new Swiper('.vendors-slider__wrap-list', {
     },
     575: {
       slidesPerView: 3,
-      freeMode: false,
       slidesPerView: 'auto',
       freeMode: true,
     }

@@ -1,0 +1,38 @@
+@@include('block/head.html', {"title": "admission tests"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+
+  <div class="container">
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// vendor -->
+        <section class="vendor section section--mb--lg">
+          <div class="vendor__exam-box exam-box gray-box">
+            <h1 class="exam-box__title">Admission Tests</h1>
+            <ul class="exam-box__list">
+              @@for (var i = 0; i < 30; i++) {
+                <li class="exam-box__item">
+                  <a class="exam-box__link link " href="#">AACD</a> <b>- American Academy of Cosmetic Dentistry</b>
+                </li>
+              }
+            </ul>
+          </div>
+
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

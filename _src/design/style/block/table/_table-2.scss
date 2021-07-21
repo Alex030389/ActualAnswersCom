@@ -1,0 +1,225 @@
+.table-2 {
+  padding: 23px 27px 34px;
+
+  counter-reset: num;
+
+  @media (max-width: $md) {
+    padding: 23px 10px 34px;
+  }
+}
+
+.table-2__row {
+  display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    padding: 10px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $c-gray-dark;
+    }
+  }
+
+  &--no-border-bottom {
+    @media (max-width: $md) {
+      border-bottom: none !important;
+    }
+  }
+
+  &--head {
+    align-items: center;
+    padding: 0 7px;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &--mb {
+    &--md {
+      margin-bottom: 9px;
+    }
+
+    &--lg {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+.table-2__inner-box {
+  padding: 13px 7px;
+
+  background-color: #fff;
+  border-radius: 10px;
+
+  @media (max-width: $md) {
+    padding: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.table-2__cell {
+  padding: 11px 16px;
+
+  @media (max-width: $md) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &--h {
+    font-weight: 599;
+    font-size: 15px;
+
+    &.table-2__cell--invoice {
+      position: relative;
+      left: -23px;
+    }
+  }
+
+  &--title {
+    display: none;
+
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &--orange-title {
+    position: relative;
+    left: -23px;
+
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: $c-orange;
+  }
+
+  &--title-box {
+    padding-left: 60px;
+
+    font-weight: 700;
+
+    @media (max-width: $md) {
+      padding-left: 16px;
+    }
+  }
+
+  &--invoice {
+    width: 39%;
+
+    @media (max-width: $xl) {
+      width: 32%;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--amount {
+    width: 18%;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--date {
+    width: 18%;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--view {
+    width: 25%;
+
+    @media (max-width: $xl) {
+      width: 32%;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--exam {
+    width: 60%;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--quest {
+    width: 20%;
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &--update {
+    width: 20%;
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+}
+
+.table-2__wrap-link {
+  position: relative;
+
+  padding-left: 45px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--invoice {
+    &::after {
+      background-image: url(../images/icon/invoice.svg);
+    }
+  }
+
+  &--pdf {
+    &::after {
+      background-image: url(../images/icon/pdf.svg);
+    }
+  }
+
+  &--number {
+    padding-left: 0;
+  }
+}
+
+.table-2__counter {
+  font-weight: 700;
+  color: #eda85a;
+}
+
+.table-2__cell-span {
+  display: none;
+
+  @media (max-width: $md) {
+    display: inline;
+
+    font-weight: 500;
+    font-size: 15px;
+  }
+}

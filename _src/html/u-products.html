@@ -1,0 +1,65 @@
+@@include('block/head.html', {"title": "my products"})
+@@include('block/header/header-with-u-menu.html')
+
+<main class="main">
+
+  <div class="container">
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content main-box__content--wide">
+        <section class="section">
+          <h1 class="title">My products</h1>
+          <p>Access all purchased exams PDF files below by clicking on the exam code or download icon.</p>
+          <div class="pagination pagination--right pagination--mb--lg">
+            <a class="pagination__link link link--orange" href="#">Previous Page</a>
+            <a class="pagination__link link link--orange" href="#">Next Page</a>
+          </div>
+
+          <div class="table-2 orange-box">
+            <div class="table-2__row table-2__row--head table-2__row--mb--lg">
+              <div class="table-2__cell table-2__cell--orange-title table-2__cell--exam">Download Your Exams</div>
+              <div class="table-2__cell table-2__cell--h table-2__cell--quest"># of questionse</div>
+              <div class="table-2__cell table-2__cell--h table-2__cell--update">Last Update</div>
+            </div>
+
+            @@for(var i = 0; i < 5; i++) {
+              <div class="table-2__inner-box">
+                <div class="table-2__row table-2__row--no-border-bottom">
+                  <div class="table-2__cell table-2__cell--title-box">ACAMS</div>
+                </div>
+                @@for(var i = 0; i < 5; i++) {
+                  <div class="table-2__row">
+                    <div class="table-2__cell table-2__cell--exam">
+                      <div class="table-2__wrap-link table-2__wrap-link--pdf">
+                        <a class="link-dark link-dark--underline link-dark--hover-violet" href="#"><b>CAMS</b></a>: Certified Anti-Money Laundering Specialist
+                      </div>
+                    </div>
+                    <div class="table-2__cell table-2__cell--quest">
+                      <span class="table-2__cell-span"># of questionse</span> 137
+                    </div>
+                    <div class="table-2__cell table-2__cell--update">
+                      <span class="table-2__cell-span">Last Update</span> May 21,21
+                    </div>
+                  </div><!--/table-2__row-->
+                }
+              </div><!--/table-2__inner-box-->
+            }
+          </div><!--/table-2-->
+
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar main-box__sidebar--narrow">
+        @@include('block/side-box/exam-providers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

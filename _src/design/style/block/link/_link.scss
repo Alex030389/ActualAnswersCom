@@ -26,4 +26,16 @@
       background-image: linear-gradient(to right, rgba(#276e78, .6));
     }
   }
+
+  &--orange {
+    color: $c-orange;
+
+    background-image: linear-gradient(to right, rgba($c-orange, .3));
+
+    &:hover {
+      color: $c-orange;
+
+      background-image: linear-gradient(to right, rgba($c-orange, .6));
+    }
+  }
 }

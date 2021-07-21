@@ -1,0 +1,53 @@
+@@include('block/head.html', {"title": "search results"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+
+  <div class="container">
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section">
+
+          <div class="pagination pagination--mb--lg">
+            <span><a class="pagination__link link link--orange" href="#">Previous Page</a></span>
+            <span><a class="pagination__link link link--orange" href="#">Next Page</a></span>
+          </div>
+
+          <div class="table-2 orange-box">
+            <div class="table-2__row table-2__row--head table-2__row--mb--lg">
+              <h1 class="table-2__cell table-2__cell--orange-title">Search Results for "222"</h1>
+            </div>
+
+              <div class="table-2__inner-box">
+                @@for(var i = 0; i < 10; i++) {
+                  <div class="table-2__row table-2__row--no-border-bottom">
+                    <div class="table-2__cell">
+                      <div class="table-2__wrap-link table-2__wrap-link--number">
+                        <span class="table-2__counter">1 - </span>
+                        <a class="link-dark link-dark--underline link-dark--hover-violet" href="#"><b>CAMS</b></a>: Certified Anti-Money Laundering Specialist
+                      </div>
+                    </div>
+                  </div><!--/table-2__row-->
+                }
+              </div><!--/table-2__inner-box-->
+          </div><!--/table-2-->
+
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

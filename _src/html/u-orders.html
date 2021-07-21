@@ -11,15 +11,35 @@
         <section class="section">
           <h1 class="title">Orders and Invoices</h1>
 
-          <div class="table-2">
-            <div class="table-2__row table-2__row--head">
-              <div class="table-2__cell table-2__cell--h">Your Product List</div>
-              <div class="table-2__cell table-2__cell--h d-md-none">Price</div>
+          <div class="table-2 orange-box">
+            <div class="table-2__row table-2__row--head table-2__row--mb--md">
+              <div class="table-2__cell table-2__cell--h table-2__cell--invoice">Invoice</div>
+              <div class="table-2__cell table-2__cell--h table-2__cell--amount">Amount</div>
+              <div class="table-2__cell table-2__cell--h table-2__cell--date">Date</div>
+              <div class="table-2__cell table-2__cell--h table-2__cell--date">View</div>
             </div>
-            <div class="table-2__row">
-              <div class="table-2__cell">Unlimited Access $129 Package</div>
-              <div class="table-2__cell"><span class="table-2__cell-span d-none d-md-inline">Price</span> $129.00 </div>
-            </div>
+
+            <div class="table-2__inner-box">
+              @@for(var i = 0; i < 5; i++) {
+                <div class="table-2__row">
+                  <div class="table-2__cell table-2__cell--title">Invoice</div>
+                  <div class="table-2__cell table-2__cell--invoice">
+                    <div class="table-2__wrap-link table-2__wrap-link--invoice">
+                      <a class="link-dark link-dark--underline link-dark--hover-violet" href="#">Invoice #5749</a>
+                    </div>
+                  </div>
+                  <div class="table-2__cell table-2__cell--amount">
+                    <span class="table-2__cell-span">Amount</span> $129.00
+                  </div>
+                  <div class="table-2__cell table-2__cell--date">
+                    <span class="table-2__cell-span">Date</span> May 21,21
+                  </div>
+                  <div class="table-2__cell table-2__cell--view">
+                    <span class="table-2__cell-span">View</span> <span><a class="link-dark link-dark--underline link-dark--hover-violet" href="#">View</a>/<a class="link-dark link-dark--underline link-dark--hover-violet" href="#">Print Invoice</a></span>
+                  </div>
+                </div><!--/table-2__row-->
+              }
+            </div><!--/table-2__inner-box-->
           </div><!--/table-2-->
 
         </section>

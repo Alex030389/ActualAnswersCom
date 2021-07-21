@@ -14,7 +14,6 @@ const closeMNav = () => {
   body.classList.remove('fixed');
   mNav.classList.remove('m-nav--active');
   mNavBox.classList.remove('m-nav__box--active');
-
 };
 
 if(btnHamburger) {
@@ -29,4 +28,14 @@ if(btnHamburger) {
   btnCloseNav.addEventListener('click', () => {
     closeMNav();
   });
+
+  const isVisible = (elem) => {
+    return elem.offsetWidth > 0 || elem.offsetHeight > 0;
+  }
+
+  window.addEventListener('resize', () => {
+    if(!isVisible(btnHamburger)) {
+      closeMNav();
+    }
+  })
 };

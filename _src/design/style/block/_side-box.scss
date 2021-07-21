@@ -20,7 +20,7 @@
   align-items: center;
   min-height: 68px;
   margin: 0 -22px 21px;
-  padding: 12px 50px;
+  padding: 12px 15px;
 
   font-size: 20px;
   line-height: 1.4;
@@ -29,9 +29,10 @@
 
   background-color: $c-green;
 
-  @media (max-width: $sl) {
-    padding-right: 22px;
-    padding-left: 22px;
+  @media (max-width: $lg) {
+    br {
+      display: none;
+    }
   }
 
   &--low {
@@ -85,4 +86,42 @@
 
   background: url(../images/ui/flag-2.svg) center center no-repeat;
   background-size: 100%;
+}
+
+.side-box__providers-list {
+  margin: 0 -7px 0;
+
+  @media (max-width: $lg) {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  @media (max-width: $sm) {
+    column-count: 1;
+  }
+}
+
+.side-box__providers-item {
+  position: relative;
+
+  padding-left: 32px;
+
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    background: url(../images/icon/file.svg) center center no-repeat;
+    background-size: 100%;
+  }
 }

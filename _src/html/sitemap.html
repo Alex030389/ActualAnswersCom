@@ -1,0 +1,45 @@
+@@include('block/head.html', {"title": "vendor"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  @@include('block/agitation.html')
+
+  <div class="container">
+    @@include('block/download.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// vendor -->
+        <section>
+          <div class="pagination pagination--right pagination--mb--lg">
+            <a class="pagination__link link link--orange" href="#">Previous Page</a>
+            <a class="pagination__link link link--orange" href="#">Next Page</a>
+          </div>
+          <div class="vendor__exam-box exam-box gray-box">
+            <h3 class="exam-box__title">ActualAnswers.com Sitemap</h3>
+            <ul class="exam-box__list">
+              @@for (var i = 0; i < 60; i++) {
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+              }
+            </ul>
+          </div>
+
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

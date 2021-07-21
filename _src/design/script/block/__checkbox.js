@@ -9,4 +9,3 @@ if(checkboxes.length > 0) {
     })
   });
 }
-

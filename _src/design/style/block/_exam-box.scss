@@ -6,6 +6,8 @@
   margin-bottom: 0;
   padding: 22px 44px;
 
+  font-size: 20px;
+
   user-select: none;
 
   @media (max-width: $md) {
@@ -82,13 +84,17 @@
 }
 
 .exam-box__item {
-  width: 50%;
+  width: 100%;
   padding: 17px 24px 16px;
 
   border-bottom: 1px solid $c-gray-dark;
 
   @media (max-width: $md) {
     padding: 16px 10px;
+  }
+
+  @media (max-width: $ss) {
+    width: 100%;
   }
 
   &--orange {
@@ -102,6 +108,10 @@
   }
 
   &--col {
+    &--2 {
+      width: 50%;
+    }
+
     &--3 {
       width: 33.333333%;
 
@@ -125,10 +135,6 @@
         width: 50%;
       }
     }
-  }
-
-  @media (max-width: $ss) {
-    width: 100%;
   }
 }
 

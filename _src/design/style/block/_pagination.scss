@@ -1,0 +1,16 @@
+.pagination {
+  text-align: right;
+
+  & > *:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &--mb {
+    &--lg {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.pagination__link {
+}
