@@ -1,8 +1,8 @@
 .signup {
-  padding-top: 56px;
+  // padding-top: 56px;
 
   @media (max-width: $md) {
-    padding-top: 23px;
+    // padding-top: 23px;
   }
 }
 
@@ -240,4 +240,18 @@
 .signup__support {
   width: 100%;
   margin-bottom: 0;
+}
+
+.signup__error {
+  max-width: 338px;
+  width: 100%;
+
+  #jsErr {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  table {
+    //margin: 0;
+  }
 }

@@ -1,0 +1,46 @@
+@@include('block/head.html', {"title": "guarantee"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  <div class="container">
+
+    @@include('block/breadcrumb.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <section>
+          <div class="money-back-large orange-box">
+            <img class="money-back-large__img" src="./design/images/ui/flag-2.svg" alt="img">
+            <h1 class="money-back-large__title title title--orange">Actual Answers 100% Pass Guarantee</h1>
+            <p class="money-back-large__text">Our guarantee is very simple: If you do not pass your next exam, we will refund 100% of your membership fee and close your account.
+              We can offer this guarantee because if you use our actual exam questions and answers, passing is a virtual certainty.</p>
+          </div>
+          <h2 class="title">The only limitations are:</h2>
+          <div class="text-content">
+            <ul>
+              <li>You cannot have written and failed the exam within 7 days of joining. (That is, you must have taken a reasonable length of time to study.)</li>
+              <li>You must ask for your refund within 30 days of joining.</li>
+              <li>You must send us a scanned copy of the exam transcript as proof of failure.</li>
+              <li>Guarantee policy is not applicable to Training Courses, Avaya, CISSP, EMC, HP, Microsoft, Oracle, PMI and SSCP exams.*</li>
+            </ul>
+            <p>To claim a refund, please contact us and have your failed transcript ready.</p>
+            <p>*We do not provide the actual questions and answers for these exams. Rather, we provide similar practice questions and answers, that cover the same topics. For this reason, these exams are excluded from the guarantee.</p>
+          </div>
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

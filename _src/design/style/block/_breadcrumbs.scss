@@ -1,0 +1,41 @@
+.breadcrumbs {
+  @extend .list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+  padding-top: 15px;
+
+  @media (max-width: $md) {
+    margin-bottom: 24px;
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  font-size: 15px;
+  color: #8372e8;
+
+  &:not(:last-child) {
+    margin-right: 26px;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      top: 1px;
+      right: -18px;
+
+      color: #0b1129;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: #0b1129;
+
+  &:hover {
+    color: #0b1129;
+    text-decoration: none;
+  }
+}

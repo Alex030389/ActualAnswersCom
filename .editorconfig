@@ -9,5 +9,5 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 # example an exception
-# [*.{json,md}]
-# indent_size = 2
+[*.{json,md}]
+trim_trailing_whitespace = false

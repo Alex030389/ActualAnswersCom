@@ -1,0 +1,32 @@
+.money-back-large {
+  margin-bottom: 60px;
+  padding: 30px 20px;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.money-back-large__img {
+  width: 100%;
+  max-width: 343px;
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}
+
+.money-back-large__title {
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
+}
+
+.money-back-large__text {
+  font-weight: 500;
+}

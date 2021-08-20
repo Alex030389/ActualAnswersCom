@@ -25,9 +25,7 @@ $('[data-js="selectric"]').selectric()
 @@include('block/__checkbox.js')
 @@include('block/__signup.js')
 @@include('block/__signum-tab.js')
-// @@include('block/__tab.js');
-// @@include('block/__copy-discount.js');
-// @@include('block/__modal.js');
+@@include('block/__modal.js')
 @@include('block/__scroll-to.js')
 @@include('block/__up.js')
 @@include('block/__stick-footer.js')

@@ -1,0 +1,59 @@
+@@include('block/head.html', {"title": "exam"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  <div class="container">
+
+    @@include('block/breadcrumb.html')
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// exams -->
+        <section class="exam-box gray-box">
+          <h3 class="exam-box__title">All Included Certification Exams at ActualAnswers</h3>
+          <ul class="exam-box__list">
+            @@for (var i = 0; i < 9; i++) {
+              <li class="exam-box__item table-exams">
+                <div class="table-exams__row">
+                  <div class="table-exams__cell _h _vendor">
+                    <a class="link" href="#">ABA Actual Answers</a>
+                  </div>
+                  <div class="table-exams__cell _h _question">
+                    # of Questions
+                  </div>
+                </div><!-- /table-exams__row -->
+                <div class="table-exams__row">
+                  <div class="table-exams__cell">
+                    <a class="link" href="#">CRCM:</a> Certified Regulatory Compliance Manager
+                  </div>
+                  <div class="table-exams__cell">
+                    <span class="d-md-inline d-none"># </span>462
+                  </div>
+                </div><!-- /table-exams__row -->
+                <div class="table-exams__row">
+                  <div class="table-exams__cell">
+                    <a class="link" href="#">CRCM:</a> Certified Regulatory Compliance Manager
+                  </div>
+                  <div class="table-exams__cell">
+                    <span class="d-md-inline d-none"># </span>462
+                  </div>
+                </div><!-- /table-exams__row -->
+              </li>
+            }
+          </ul>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

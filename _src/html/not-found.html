@@ -1,0 +1,51 @@
+@@include('block/head.html', {"title": "sample"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  <div class="container">
+
+    @@include('block/breadcrumb.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+
+        <!-- ////////////////////////////////////////////////////////// not-found -->
+        <section class="table-2 orange-box">
+          <div class="table-2__row table-2__row--head table-2__row--mb--lg">
+            <h1 class="table-2__cell table-2__cell--orange-title">Search Results for "222"</h1>
+          </div>
+          <div class="table-2__inner-box not-found">
+            <p class="not-found__p">
+              <b>No items were found</b><br>
+              The certification / exam you were searching for is not available now. But we will review your request and contact you when this certification / exam will be released.
+            </p>
+            <p class="not-found__p">Please provide your e-mail address so we can inform you when requested certification / exam becomes available. Thanks!</p>
+            <form class="not-found__form" action="#">
+              <div class="not-found__form-group form-group">
+                <label class="form-label" for="email">E-mail address:</label>
+                <input class="form-control form-control--lg form-control--gray" type="text" id="email" name="email">
+              </div>
+              <div class="not-found__form-group form-group">
+                <label class="form-label" for="password">Password:</label>
+                <input class="form-control form-control--lg form-control--gray" type="password" id="password" name="password">
+              </div>
+              <button class="not-found__btn btn btn--violet">Request Exam</button>
+            </form>
+          </div><!-- /not-found -->
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

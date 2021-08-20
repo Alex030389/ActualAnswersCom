@@ -41,8 +41,14 @@
 @import "block/slider/swiper-button";
 @import "block/slider/swiper-pagination";
 
+// table
+@import "block/table/table";
+@import "block/table/table-2";
+@import "block/table/table-exams";
+
 // ather
 @import "block/text-content";
+@import "block/breadcrumbs";
 @import "block/gray-box";
 @import "block/orange-box";
 @import "block/violet-box";
@@ -70,12 +76,14 @@
 @import "block/testimonials-slider";
 @import "block/licensing";
 @import "block/steps";
-@import "block/table/table";
-@import "block/table/table-2";
 @import "block/billing";
 @import "block/step-pay";
 @import "block/u-settings";
 @import "block/pagination";
+@import "block/money-back-large";
+@import "block/page-404";
+@import "block/not-found";
+
 
 @import "block/side-box";
 @import "block/footer/footer";
@@ -86,3 +94,7 @@
 
 // ///////////////////////////////////////// display
 @import "base/display";
+
+.error_message {
+  color: red;
+}

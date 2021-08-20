@@ -1,10 +1,23 @@
 .text-content {
   p {
     margin-bottom: 30px;
+
+    i {
+      font-size: 14px;
+    }
   }
 
   a {
     @extend .link;
+  }
+
+  ul {
+    margin-bottom: 30px;
+    padding-left: 26px;
+
+    li {
+      margin-bottom: 18px;
+    }
   }
 
   .listTit {

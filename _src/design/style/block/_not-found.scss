@@ -1,0 +1,51 @@
+.not-found {
+  padding: 30px 20px 70px;
+
+  @media (max-width: $md) {
+    padding: 16px 16px 30px;
+  }
+}
+
+.not-found__p {
+  max-width: 900px;
+}
+
+.not-found__form {
+  display: flex;
+  padding-top: 10px;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 5px;
+  }
+}
+
+.not-found__form-group {
+  width: 31%;
+  margin-right: 33px;
+
+  @media (max-width: $xl) {
+    align-self: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 0 25px;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+}
+
+.not-found__btn {
+  align-self: flex-end;
+  max-width: 252px;
+  height: 50px;
+
+  @media (max-width: $xl) {
+    align-self: center;
+    max-width: 280px;
+  }
+}

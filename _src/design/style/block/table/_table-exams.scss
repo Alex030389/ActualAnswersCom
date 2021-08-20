@@ -1,0 +1,54 @@
+.table-exams {
+}
+
+.table-exams__row {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.table-exams__cell {
+  font-weight: 500;
+  font-size: 15px;
+
+  &:first-child {
+    width: 78%;
+
+    @media (max-width: $xl) {
+      width: 72%;
+    }
+  }
+
+  &:last-child {
+    width: 22%;
+    padding-left: 30px;
+
+    @media (max-width: $xl) {
+      width: 28%;
+    }
+
+    @media (max-width: $md) {
+      padding-left: 20px;
+      text-align: right;
+    }
+  }
+
+  &._h {
+  }
+
+  &._vendor {
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &._question {
+    color: $c-violet;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
