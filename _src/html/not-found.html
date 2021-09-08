@@ -1,4 +1,4 @@
-@@include('block/head.html', {"title": "sample"})
+@@include('block/head.html', {"title": "not found"})
 @@include('block/header/header.html', {"unav": false})
 
 <main class="main">
@@ -24,13 +24,23 @@
             <form class="not-found__form" action="#">
               <div class="not-found__form-group form-group">
                 <label class="form-label" for="email">E-mail address:</label>
-                <input class="form-control form-control--lg form-control--gray" type="text" id="email" name="email">
+                <input class="form-control form-control--gray" type="text" id="email" name="email">
               </div>
               <div class="not-found__form-group form-group">
                 <label class="form-label" for="password">Password:</label>
-                <input class="form-control form-control--lg form-control--gray" type="password" id="password" name="password">
+                <input class="form-control form-control--gray" type="password" id="password" name="password">
               </div>
-              <button class="not-found__btn btn btn--violet">Request Exam</button>
+              <div class="not-found__form-group">
+                <label class="form-label form-label--secure form-label--required" for="email">Security Code:</label>
+                <div class="code">
+                  <input class="code__form-control form-control form-group form-control--gray" type="text" id="company:" name="company">
+                  <img class="code__img" src="./design/images/ui/captcha.png" alt="img">
+                  <div class="code__text">Please enter security code exactly as shown.</div>
+                </div>
+              </div>
+              <div class="not-found__form-group not-found__form-group--wrap-btn">
+                <button class="not-found__btn btn btn--violet">Request Exam</button>
+              </div>
             </form>
           </div><!-- /not-found -->
         </section>

@@ -30,6 +30,26 @@
     background-position-x: 70%;
     background-size: 540px auto;
   }
+
+  &--type-2 {
+    margin-bottom: 0;
+    padding: 18px 26px;
+    border-radius: 10px;
+    height: auto;
+    background-position: 0 -35px;
+    background-size: 107%;
+
+    @media (max-width: $xl) {
+      background-position: 0 top;
+    }
+
+    @media (max-width: $sm) {
+      margin: 0 -15px;
+      border-radius: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
 
 .agitation__banner {
@@ -56,6 +76,16 @@
     padding: 120px 16px 24px;
 
     letter-spacing: -.02em;
+  }
+
+  &--type-2 {
+    top: 0;
+    max-width: 790px;
+    padding: 36px 20px 24px;
+
+    @media (max-width: $xl) {
+      padding-top: 127px
+    }
   }
 }
 
@@ -87,6 +117,13 @@
 
     width: 270px;
   }
+
+  &--type-2 {
+    width: 324px;
+    padding: 25px 25px 14px 53px;
+    height: 70px;
+    right: -9px;
+  }
 }
 
 .agitation__money-back-btn {
@@ -98,10 +135,24 @@
   @media (max-width: $md) {
     font-size: 18px;
   }
+
+  &--type-2 {
+    font-size: 16px;
+  }
 }
 
 .agitation__title {
   margin-bottom: 40px;
+
+  &--type-2 {
+    max-width: 316px;
+    font-size: 24px;
+    margin-bottom: 21px;
+
+    @media (max-width: $lg) {
+      max-width: 100%;
+    }
+  }
 }
 
 .agitation__list {
@@ -110,8 +161,35 @@
   @media (max-width: $md) {
     margin-bottom: 21px;
   }
+
+  &--type-2 {
+    margin-bottom: 22px;
+    column-count: 2;
+    column-gap: 30px;
+
+    @media (max-width: $md) {
+      column-count: 1;
+    }
+  }
 }
 
 .agitation__wrap-btn {
   text-align: center;
+
+  &--type-2 {
+    text-align: left;
+
+    @media (max-width: $md) {
+      text-align: center;
+    }
+  }
+}
+
+.agitation__btn {
+  height: 53px;
+  max-width: 253px;
+
+  @media (max-width: $md) {
+    max-width: 338px;
+  }
 }

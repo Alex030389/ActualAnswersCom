@@ -54,6 +54,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  //&--only-btn {
+  //  justify-content: center;
+  //}
 }
 
 .step-pay__form-group {
@@ -85,6 +89,16 @@
   height: 50px;
 }
 
+.step-pay__wrap-pay-btn {
+  margin-bottom: 10px;
+  padding-top: 9px;
+  display: flex;
+
+  @media (max-width: $md) {
+    justify-content: center;
+  }
+}
+
 .step-pay__btn {
   max-width: 189px;
   height: 50px;
@@ -95,19 +109,17 @@
 }
 
 .step-pay__wrap-img {
-  width: 340px;
   margin-bottom: 25px;
   padding-top: 18px;
-
-  @media (max-width: $md) {
-    margin: 0 auto 25px;
-  }
 }
 
 .step-pay__img {
   width: 100%;
   max-width: 340px;
-  margin: 0 auto;
+
+  @media (max-width: $md) {
+    margin: 0 auto;
+  }
 
   &--sm {
     max-width: 167px;

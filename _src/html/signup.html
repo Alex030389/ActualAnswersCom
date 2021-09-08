@@ -19,7 +19,17 @@
       <div class="signup__box-forms">
         <form class="signup__form signup__form--active" action="#">
           <h1 class="signup__title title">Login to Account</h1>
-          <p class="signup__subtitle signup__subtitle--mb--lg">Sign in to ActualAnswers account - enter your username/email address and password below.</p>
+          <p class="signup__subtitle signup__subtitle--mb--lg">Sign in to ActualAnswers account - enter your
+            username/email address and password below.</p>
+
+          <!--          ///////////////// error-->
+          <div id="jsErr">
+            <!--            <p>Incorrect e-mail or password!</p>-->
+            <p>`E-mail`: Your e-mail address does not conform to a proper e-mail address syntax, please check your
+              typing and try again.</p>
+          </div>
+          <!--          /////////////////-->
+
           <div class="signup__form-group form-group">
             <label class="form-label" for="email">E-mail address:</label>
             <input class="form-control form-control--gray" type="text" id="email" name="email">
@@ -38,6 +48,18 @@
           <h1 class="signup__title title">Register Now</h1>
           <p class="signup__subtitle">Are you new at ActualAnswers? Become a member!<br>
             Registration is fast and simple. Use your email address and create a password:</p>
+
+          <div id="jsReg">
+            <table border="0" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td class="error_message" id="sysErrTable"><p>Please provide a correct `Confirm Password`.</p>
+                  <p>Your e-mail address does not conform to a proper e-mail address syntax, please check your typing
+                    and try again.</p>
+                  <p>Your password must be at least 6 characters and comprised of numbers and letters ONLY.</p></td>
+              </tr>
+            </table>
+          </div>
+
           <div class="signup__form-group form-group">
             <label class="form-label" for="address">E-mail address:</label>
             <input class="form-control form-control--gray" type="text" id="address" name="address">
@@ -52,13 +74,17 @@
           </div>
           <div class="signup__checkbox-group checkbox-group">
             <input class="checkbox-group__input visually-hidden" type="checkbox" checked id="checkbox">
-            <label class="checkbox-group__label" for="checkbox" data-js="checkbox-label">I'd like to recive newsletters from ActualAnswers.com to get more training information. By clicking on "Sign Up Now" below you are agreeing to the ActualAnswers.com Privacy Policy</label>
+            <label class="checkbox-group__label" for="checkbox" data-js="checkbox-label">I'd like to recive newsletters
+              from ActualAnswers.com to get more training information. By clicking on "Sign Up Now" below you are
+              agreeing to the ActualAnswers.com Privacy Policy</label>
           </div>
           <button class="signup__btn btn btn--green">Sing Up Now</button>
         </form>
       </div><!--/signup__inner-->
 
-      <p class="signup__support">If you encounter any problems with accessing your account or signing in, please contact customer support : <a class="link link--green" href="mailto:support@actualanswers.com">support@actualanswers.com</a></p>
+      <p class="signup__support">If you encounter any problems with accessing your account or signing in, please contact
+        customer support : <a class="link link--green"
+                              href="mailto:support@actualanswers.com">support@actualanswers.com</a></p>
 
     </section>
   </div><!--/container-->

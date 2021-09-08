@@ -1,0 +1,37 @@
+@@include('block/head.html', {"title": "thank you"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  <div class="container">
+
+    @@include('block/breadcrumb.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+
+        <section>
+          <h1 class="title">Purchase Complete, Thank You!</h1>
+          <div class="text-content">
+            <p>Your purchase was successful.</p>
+            <p>Please Sign In to your account to <a href="https://www.actualanswers.com/member_area/home.htm">access your purchases</a> or <a href="https://www.actualanswers.com/member_area/invoice.htm">print a receipt</a> in your Members' Area.</p>
+            <p>If you didn't have an account with ActualAnswers.com before then it was created automatically, password of the account was emailed to.</p>
+            <p>A receipt for this purchase has been emailed to. You can also print a receipt in the Members' Area.</p>
+            <p>NOTE: Most purchases are available immediately. However, due to recent security upgrades, there may be occasional delays of up to 12 hours while manual verifications are performed. Please feel free to <a href="mailto:sales@actualanswers.com">email us</a> to check your status. Thanks for your understanding!</p>
+          </div>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

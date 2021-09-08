@@ -121,6 +121,11 @@
   @media (max-width: $md) {
     padding: 12px 13px 26px;
   }
+
+}
+
+.faq__a a {
+  @extend .link;
 }
 
 @keyframes openAnswer {

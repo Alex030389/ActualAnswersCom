@@ -1,0 +1,28 @@
+@@include('block/head.html', {"title": "orders"})
+@@include('block/header/header-with-u-menu.html')
+
+<main class="main">
+
+  <div class="container">
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box main-box--pt--lg">
+      <div class="main-box__content">
+        <section class="section">
+          <h1 class="title">Orders and Invoices</h1>
+          <div class="orange-box no-invoices">No invoices to display</div>
+        </section>
+
+      </div><!--/main-row__content-->
+
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-row-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

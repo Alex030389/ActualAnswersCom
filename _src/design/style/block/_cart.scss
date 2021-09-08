@@ -1,0 +1,11 @@
+.cart {
+
+}
+
+.cart__wrap-btn {
+  text-align: right;
+  
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}

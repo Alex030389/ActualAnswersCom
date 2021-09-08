@@ -9,32 +9,26 @@
     <!-- ////////////////////////////////////////////////////////// main-box -->
     <div class="main-box">
       <div class="main-box__content">
-        <!-- ////////////////////////////////////////////////////////// allvendors -->
-        <section class="allvendors section section--mb--md">
-          <h1 class="title">Included Vendors and Certifications</h1>
-          <ul class="allvendors__list">
-            @@for (var i = 0; i < 10; i++) {
-              <li class="allvendors__item">
-                <div class="allvendors__wrap-link">
-                  <a class="allvendors__link link link-stretched" href="#">AACD</a>
-                </div>
-                <div class="allvendors__info">1 Exam</div>
-              </li>
-              <li class="allvendors__item">
-                <div class="allvendors__wrap-link">
-                  <a class="allvendors__link link link-stretched" href="#">IEEE Computer Society</a>
-                </div>
-                <div class="allvendors__info">1 Exam</div>
-              </li>
-              <li class="allvendors__item">
-                <div class="allvendors__wrap-link">
-                  <a class="allvendors__link link link-stretched" href="#">Informatica</a>
-                </div>
-                <div class="allvendors__info">10 Exams</div>
-              </li>
+        <div class="vendor__exam-box exam-box gray-box">
+          <h3 class="exam-box__title">Included Vendors and Certifications</h3>
+          <ul class="exam-box__list">
+            @@for (var i = 0; i < 18; i++) {
+            <li class="exam-box__item exam-box__item--col--2 exam-box__item--col--1sm">
+              <h4 class="exam-box__vendor">
+                <a class="link" href="#">ACAMS</a>
+              </h4>
+              <ul class="exam-list">
+                <li class="exam-list__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+                <li class="exam-list__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">Microsoft 365 Certified: Modern Desktop Administrator Associate</a>
+                </li>
+              </ul>
+            </li>
             }
           </ul>
-        </section>
+        </div>
       </div><!--/main-box__content-->
 
       <!-- //////////////////////////////////////////////////////////////////////////// -->

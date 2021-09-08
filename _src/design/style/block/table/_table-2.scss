@@ -156,7 +156,11 @@
   }
 
   &--exam {
-    width: 60%;
+    width: 74%;
+
+    @media (max-width: $sl) {
+      width: 64%
+    }
 
     @media (max-width: $md) {
       width: 100%;
@@ -164,14 +168,26 @@
   }
 
   &--quest {
-    width: 20%;
+    width: 13%;
+    text-align: center;
+
+    @media (max-width: $sl) {
+      width: 18%;
+    }
+
     @media (max-width: $md) {
       width: 100%;
     }
   }
 
   &--update {
-    width: 20%;
+    width: 13%;
+    text-align: center;
+
+    @media (max-width: $sl) {
+      width: 18%;
+    }
+
     @media (max-width: $md) {
       width: 100%;
     }

@@ -135,7 +135,17 @@
         width: 50%;
       }
     }
+
+    &--1sm {
+      @media (max-width: $sm) {
+        width: 100%;
+      }
+    }
   }
+}
+
+.exam-box__vendor {
+  font-size: 18px;
 }
 
 .exam-box__box-product-btn {

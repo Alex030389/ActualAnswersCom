@@ -64,7 +64,7 @@
 @import "block/download";
 @import "block/top-box";
 @import "block/exam-box";
-@import "block/allvendors";
+@import "block/exam-list";
 @import "block/vendor";
 @import "block/slider/vendors-slider";
 @import "block/exam";
@@ -83,7 +83,9 @@
 @import "block/money-back-large";
 @import "block/page-404";
 @import "block/not-found";
-
+@import "block/no-products";
+@import "block/no-invoices";
+@import "block/cart";
 
 @import "block/side-box";
 @import "block/footer/footer";
@@ -95,6 +97,5 @@
 // ///////////////////////////////////////// display
 @import "base/display";
 
-.error_message {
-  color: red;
-}
+// ///////////////////////////////////////// error
+@import "block/error";

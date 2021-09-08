@@ -1,0 +1,46 @@
+@@include('block/head.html', {"title": "vendor"})
+@@include('block/header/header.html', {"unav": false})
+
+<main class="main">
+  <div class="container">
+
+    @@include('block/breadcrumb.html')
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// cart -->
+        <section class="cart">
+          <h1 class="title">Your Product List</h1>
+          <div class="table table--mb--md">
+            <div class="table__row table__row--head">
+              <div class="table__cell table__cell--h">Product Description</div>
+              <div class="table__cell table__cell--h d-md-none">Price</div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Unlimited Access $129 Package</div>
+              <div class="table__cell"><span class="table__cell-span d-none d-md-inline">Price</span> $129.00 </div>
+            </div>
+            <div class="table__row table__row--foot">
+              <div class="table__cell table__cell--f d-md-none"></div>
+              <div class="table__cell table__cell--f">Total : $129.00</div>
+            </div>
+          </div>
+
+          <div class="cart__wrap-btn"><a class="btn btn--green" href="http://www.host07.julia.tk/checkout.htm">Go to secure Checkout</a></div>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        @@include('block/side-box/customers-say.html')
+        @@include('block/side-box/companies-use-answers.html')
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')
